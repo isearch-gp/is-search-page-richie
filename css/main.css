@@ -926,7 +926,8 @@ body {
 
 .session-list {
 	padding: 0 15px 0 30px;
-	height: 186px;
+	/**height: 186px;**/
+	height: 386px;
 	overflow-x: hidden;
 	overflow-x: auto;
 }
@@ -1185,4 +1186,4 @@ body {
 		text-align: center;
 	}
 }
-
+
