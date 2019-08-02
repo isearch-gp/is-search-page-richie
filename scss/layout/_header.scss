@@ -1,0 +1,53 @@
+#header {
+	@extend %clearfix;
+	padding: 20px 31px 18px;
+	border-bottom: 1px solid #e9e9e9;
+	@include media("<tablet") {
+		padding: 10px 15px;
+	}
+}
+
+.logo {
+	margin-top: 8px;
+	float: left;
+	width: 199px;
+	@include media("<desktop") {
+		width: 150px;
+		margin-top: 12px;
+	}
+	img {
+		vertical-align: top;
+	}
+}
+
+.head-menu {
+	@extend %listreset;
+	float: right;
+	display: flex;
+	align-items: center;
+	li {
+		margin: 0 0 0 20px;
+	}
+	img {
+		vertical-align: top;
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+		font-size: 28px;
+		transition: color 0.3s ease;
+		&:hover {
+			color: #6441a4;
+		}
+	}
+	.avatar {
+		visibility: 50%;
+		width: 36px;
+		height: 36px;
+		display: block;
+		overflow: hidden;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
